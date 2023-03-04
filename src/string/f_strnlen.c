@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnlen.c                                       :+:      :+:    :+:   */
+/*   f_strnlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 17:11:31 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/03/04 14:04:43 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/03/04 14:22:03 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
  * @param n The maximum number of bytes to scan.
  * @return Either the same result as strlen(3) or n, whichever is smaller.
  */
-size_t	ft_strnlen(const char *s, size_t n)
+size_t	f_strnlen(const char *s, size_t n)
 {
 	const char	*p;
 
-	p = ft_memchr(s, 0, n);
+	p = f_memchr(s, 0, n);
 	if (p)
 		return (p - s);
 	return (n);

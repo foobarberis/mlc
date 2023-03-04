@@ -6,7 +6,7 @@
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 16:59:04 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/03/04 16:37:30 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/03/04 16:43:19 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,4 @@ int			f_isreal(const char *s);
 
 /* MISC */
 uintmax_t	f_abs(intmax_t n);
-char		*f_itoa(int n);
-char		*f_itoa_base(intmax_t n, char *base);
 #endif

@@ -6,7 +6,7 @@
 #    By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 17:06:24 by mbarberi          #+#    #+#              #
-#    Updated: 2023/03/05 16:12:55 by mbarberi         ###   ########.fr        #
+#    Updated: 2023/03/05 16:34:26 by mbarberi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRCS		:=	ctype/f_isalnum.c \
 				ctype/f_isspace.c \
 				ctype/f_isupper.c \
 				misc/f_abs.c \
+				stdio/f_perror.c \
 				stdio/f_printf.c \
 				stdio/f_putnbr_base.c \
 				stdlib/f_atof.c \

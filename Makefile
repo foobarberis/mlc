@@ -6,7 +6,7 @@
 #    By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 17:06:24 by mbarberi          #+#    #+#              #
-#    Updated: 2023/03/04 16:36:42 by mbarberi         ###   ########.fr        #
+#    Updated: 2023/03/05 15:47:40 by mbarberi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ SRCS		:=	ctype/f_isalnum.c \
 				string/f_memcmp.c \
 				string/f_memcpy.c \
 				string/f_memmove.c \
+				string/f_memmem.c \
 				string/f_memrchr.c \
 				string/f_memset.c \
 				string/f_strdup.c \

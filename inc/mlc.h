@@ -6,7 +6,7 @@
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 16:59:04 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/03/04 16:43:19 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/03/05 14:23:34 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ size_t		f_strlcat(char *d, const char *s, size_t n);
 void		*f_memset(void *s, int c, size_t n);
 void		*f_memcpy(void *d, const void *s, size_t n);
 void		*f_memmove(void *d, const void *s, size_t n);
+void		*f_memmem(const void *h0, size_t hlen, const void *n0, size_t nlen);
 void		*f_memchr(const void *s, int c, size_t n);
 char		*f_strchr(const char *s, int c);
 char		*f_strrchr(const char *s, int c);

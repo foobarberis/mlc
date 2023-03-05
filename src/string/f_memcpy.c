@@ -32,18 +32,3 @@ void	*f_memcpy(void *d, const void *s, size_t n)
 		*pd++ = *ps++;
 	return (d);
 }
-
-/* void	*f_memcpy(void *d, const void *s, size_t n)
-{
-	unsigned char		*pd;
-	const unsigned char	*ps;
-
-	pd = d;
-	ps = s;
-	while (n)
-	{
-		*pd++ = *ps++;
-		n--;
-	}
-	return (d);
-} */

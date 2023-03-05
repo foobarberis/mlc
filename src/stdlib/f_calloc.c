@@ -32,14 +32,3 @@ void	*f_calloc(size_t n, size_t m)
 	f_memset(p, 0, n * m);
 	return (p);
 }
-
-/* void	*f_calloc(size_t n, size_t m)
-{
-	void	*p;
-
-	p = malloc(n * m);
-	if (!p)
-		return (NULL);
-	f_bzero(p, n * m);
-	return (p);
-} */

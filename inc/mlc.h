@@ -6,7 +6,7 @@
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 16:59:04 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/03/05 16:34:06 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/03/06 11:39:00 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ double		f_atof(const char *s);
 /* STDIO */
 /* standard */
 int			f_printf(const char *s, ...);
-void		f_perror(const char *s);
+int			f_perror(const char *s);
 /* non-standard */
 int			f_putnbr_base(uint64_t n, char *base);
 

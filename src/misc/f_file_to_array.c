@@ -6,11 +6,14 @@
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 17:32:22 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/03/07 17:33:26 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/03/07 17:37:38 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlc.h"
+#include <fcntl.h> /* for open(2) */
+
+#define READALL_CHUNK 262144
 
 /**
  * @brief Helper function to compute the size of the file by repeatedly adding
@@ -18,12 +21,12 @@
  * @param file A string containing the name of the file to process.
  * @return The size of the file or -1 if an error occured.
  */
-static int	get_file_size(char *file)
+static int	f_get_file_size(char *file)
 {
 	int		r;
 	int		fd;
 	int		size;
-	char	a[READALL_CHUNK];
+	char	buf[READALL_CHUNK];
 
 	fd = open(file, O_RDONLY);
 	if (fd < 0)
@@ -31,7 +34,7 @@ static int	get_file_size(char *file)
 	size = 0;
 	while (1)
 	{
-		r = read(fd, a, READALL_CHUNK);
+		r = read(fd, buf, READALL_CHUNK);
 		if (r < 0)
 			return (-1);
 		if (!r)
@@ -47,13 +50,13 @@ static int	get_file_size(char *file)
  * @param file A string containing the name of the file to process.
  * @return An array containing the file or NULL if an error occured.
  */
-char	*file_to_array(char *file)
+char	*f_file_to_array(char *file)
 {
 	int		fd;
 	int		size;
 	char	*buf;
 
-	size = get_file_size(file);
+	size = f_get_file_size(file);
 	if (size < 0)
 		return (NULL);
 	buf = malloc(size + 1);

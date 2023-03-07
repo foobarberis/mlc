@@ -6,7 +6,7 @@
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 16:59:04 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/03/07 17:33:39 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/03/07 17:34:17 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,5 @@ int			f_isupper(int c);
 
 /* MISC */
 uintmax_t	f_abs(intmax_t n);
-char		*file_to_array(char *file);
+char		*f_file_to_array(char *file);
 #endif

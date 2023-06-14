@@ -6,7 +6,7 @@
 /*   By: mbarberi <mbarberi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 16:59:04 by mbarberi          #+#    #+#             */
-/*   Updated: 2023/06/14 13:33:21 by mbarberi         ###   ########.fr       */
+/*   Updated: 2023/06/14 13:33:59 by mbarberi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void		*f_memmove(void *d, const void *s, size_t n);
 void		*f_memset(void *s, int c, size_t n);
 
 char		*f_strchr(const char *s, int c);
-char		*f_strchrnul(const char *s, int c);
 int			f_strcmp(const char *s1, const char *s2);
 char		*f_strdup(const char *str);
 char		*f_strjoin(char const *s1, char const *s2);
@@ -38,6 +37,7 @@ size_t		f_strlen(const char *s);
 size_t		f_strnlen(const char *s, size_t n);
 char		*f_strnstr(const char *h, const char *n, size_t m);
 /* non-standard */
+char		*f_strchrnul(const char *s, int c);
 void		*f_memrchr(const void *s, int c, size_t n);
 
 /* STDLIB */
